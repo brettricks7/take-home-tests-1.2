@@ -1,0 +1,35 @@
+flowchart TD
+  A["CLI: bin/my-cool-spellchecker.js"] --> B["Load dictionary.txt"]
+  B --> C["Create Dictionary src/lib/dictionary.ts"]
+  C --> C1["Build BK-Tree"]
+  A --> D["Read file-to-check.txt"]
+  D --> E["Tokenize with locations"]
+  E --> F{"Filter tokens"}
+  F -->|"Accepted words"| G["Skip"]
+  F -->|"Proper nouns / Hyphenated valid parts"| G
+  F -->|"In dictionary"| G
+  F -->|"Else"| H["Suggest similar words"]
+  H --> H1["Search BK-Tree Damerau–Levenshtein"]
+  H1 --> I["Rank candidates"]
+  I -->|"Typo priors: transposition > insertion/deletion > adjacent substitution"| J["Select top N"]
+  J --> K["Collect misspelling result"]
+  K --> L["Aggregate results"]
+  L --> M["Print summary + detailed output"]
+
+  subgraph Core
+    C1
+    H1
+  end
+
+  subgraph Lib
+    C
+    E
+    I
+    J
+    K
+  end
+
+  subgraph IO
+    F
+    B
+  end

@@ -1,0 +1,12 @@
+Hello wrld! This is a tset of the spel checker.
+
+Gabby and Jamison visited Paris on Monday. Droplet builds cool software.
+
+The state-of-the-art system shouldn't mis-handle hyphenated-words or apostrophes.
+
+Some Unicode words: naïve café coöperate résumé façade jalapeño.
+
+Edge-cases include words at line-starts, mid-sentence Capitals, and end-of-line typos lik this.
+
+Werds at the beginning of sentences are not always right.
+

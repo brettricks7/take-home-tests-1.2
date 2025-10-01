@@ -1,0 +1,25 @@
+{
+  "name": "spell-check-challenge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CLI spell checker for interview take-home.",
+  "bin": {
+    "my-cool-spellchecker": "bin/my-cool-spellchecker.js"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "node bin/my-cool-spellchecker.js",
+    "spellcheck": "node bin/my-cool-spellchecker.js",
+    "add-uncommon": "node bin/add-uncommon.js",
+    "add-accepted": "node bin/add-accepted.js",
+    "test": "node tests/run-tests.js && node tests/run-comprehensive-tests.js",
+    "test:comprehensive": "node tests/run-comprehensive-tests.js",
+    "tsc": "tsc -p .",
+    "docs": "./scripts/generate-architecture.sh"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  }
+}
+

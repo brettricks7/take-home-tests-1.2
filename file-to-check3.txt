@@ -1,0 +1,11 @@
+\u0000\u0000\u0000\u0000\u0000
+This line contains extremely long token: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Mixed scripts: عربي English Русский 漢字 Ελληνικά हिंदी മലയാളം ไทย తెలుగు বাংলা ગુજરાતી ಕನ್ನಡ ਪੰਜਾਬੀ
+Unmatched quotes and brackets " ' ( [ { < >>>> <<<< } ] ) ' "
+Massive punctuation --------------!!!!!!!!!!!!????????????,,,,,,,,,;;;;;;;;;;;;::::::..............................
+Hyphen-chain x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
+Emoji storm: 😀😂🤣😜🤯😇👍🏽🔥🚀💥✨🌟🧪🔬🧠🧰🛠️📦📚📝✅❌
+Zero width chars: a\u000Bb\u000Cc\u000Dd\u000Ae\u000Af
+Combining marks: éêëáàãöôòñ
+Very very very very very very very very very very very very very very very very very long line without newline at the end that just keeps going to see if anything breaks in streaming or memory handling or regex engine catastrophes especially with unicode categories and global flags and backtracking that might cause catastrophic backtracking in some engines but should be fine here
+
